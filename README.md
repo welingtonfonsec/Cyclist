@@ -34,7 +34,7 @@ A busca pela maximização do número de clientes da categoria membros anuais é
 ## Dados
 
 * **Fonte de dados**: Dados públicos da Motivate International Inc. (Serviço de compartilhamento de bicicletas Divvy de Chicago) sob [esta licença](https://ride.divvybikes.com/data-license-agreement);
-* [Dados históricos](https://divvy-tripdata.s3.amazonaws.com/index.html) de viagens de ciclistas (de 2013 em diante) disponíveis em no formato <span style="background-color: #f2f2f2">.csv</span>.
+* [Dados históricos](https://divvy-tripdata.s3.amazonaws.com/index.html) de viagens de ciclistas (de 2013 em diante) disponíveis em no formato **.csv**.
 * **Intervalo dos dados da análise**: janeiro a dezembro de 2022 (1 GB, descompactado);
 * O conjunto de dados possui registros individuais de uso de bicicletas compartilháveis que constam de data e hora de início e término do passeio, latitude e longitude, informações da estação, tipo de bicicleta e tipo de ciclista (casual/membro).
 

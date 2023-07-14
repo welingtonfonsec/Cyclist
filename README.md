@@ -41,7 +41,7 @@ A busca pela maximização do número de clientes da categoria membros anuais é
 ## Processamento e Limpeza
 
 * Os dados foram baixados para o HD local para manipulação e análise usando o **RStudio**;
-* Toda a documentação e script do trabalho está aqui.
+* Toda a **documentação e script** do trabalho está [aqui.](https://github.com/welingtonfonsec/Cyclist/blob/main/documentacao%20em%20R/documentacao.R)
 * [**Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiN2I4NmE1YTQtOTVkYy00OTk0LTgxNGItYjEzNzBkZTMxNzFhIiwidCI6ImM1ZTg3YmRkLWVkZGQtNDhhNC04ZTAyLTVlNTkzNjkxOGVhZCJ9&pageName=ReportSectionea2d602974fb01cb81f0) desenvolvido no **Microsoft Power BI**;
 * Para auxiliar na análise, foram adicionadas 10 novas colunas (data, dia da semana, mês, estação, hora de inicio, hora de fim, tempo total, tempo total em minutos, hora e quilometros percorridos;
 * Antes da limpeza, todo o dataset possuia <span style="background-color: #f2f2f2">5.667.717</span> linhas.

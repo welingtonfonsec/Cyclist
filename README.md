@@ -15,7 +15,7 @@
 
 ## Introdução
 
-Este estudo de caso foi elaborado pela Google em parceria com a Coursera, como projeto final para obtenção do Certificado Profissional Google Data Analytics. O cenário consiste na análise dos dados de demanda da empresa de compartilhamento de bicicletas Cyclistic.
+Este estudo de caso foi elaborado pela Google em parceria com a Coursera, como projeto final para obtenção do [Certificado Profissional Google Data Analytics](https://grow.google/certificates/data-analytics/#?modal_active=none). O cenário consiste na análise dos dados de demanda da empresa de compartilhamento de bicicletas Cyclistic.
 
 A empresa oferta seu serviço de aluguel de bicicletas de duas formas: passes individuais chamados de ciclistas "casuais" e assinaturas anuais chamadas de ciclistas "membros". A empresa conta com cerca de 6.000 bicicletas que circulam por meio de 700 estações nas ciclovias da cidade de Chicago, localizada no estado de Illinois, Estados Unidos.
 
@@ -29,21 +29,20 @@ A busca pela maximização do número de clientes da categoria membros anuais é
 
 * Como a Cyclist pode usar a mídia digital para influenciar os usuários casuais a se tornarem membros?
 
-<blockquote style="color: #808080;">
-    <p style="margin-left: 20px;">**Objetivo**: Limpar, analisar e visualizar os dados para observar como os ciclistas casuais usam o aluguel de bicicletas de maneira diferente dos ciclistas associados anuais e obter insights.</p>
-</blockquote>
+>**Objetivo**: Limpar, analisar e visualizar os dados para observar como os ciclistas casuais usam o aluguel de bicicletas de maneira diferente dos ciclistas associados anuais e obter insights.
 
 ## Dados
 
 * **Fonte de dados**: Dados públicos da Motivate International Inc. (Serviço de compartilhamento de bicicletas Divvy de Chicago) sob [esta licença](https://ride.divvybikes.com/data-license-agreement);
 * [Dados históricos](https://divvy-tripdata.s3.amazonaws.com/index.html) de viagens de ciclistas (de 2013 em diante) disponíveis em no formato <span style="background-color: #f2f2f2">.csv</span>.
-* **Intervalo dos dados da análise**:janeiro a dezembro de 2022 (1 GB, descompactado);
+* **Intervalo dos dados da análise**: janeiro a dezembro de 2022 (1 GB, descompactado);
 * O conjunto de dados possui registros individuais de uso de bicicletas compartilháveis que constam de data e hora de início e término do passeio, latitude e longitude, informações da estação, tipo de bicicleta e tipo de ciclista (casual/membro).
 
 ## Processamento e Limpeza
 
 * Os dados foram baixados para o HD local para manipulação e análise usando o **RStudio**;
-* **Dashboard** desenvolvido no [Microsoft Power BI](https://app.powerbi.com/view?r=eyJrIjoiN2I4NmE1YTQtOTVkYy00OTk0LTgxNGItYjEzNzBkZTMxNzFhIiwidCI6ImM1ZTg3YmRkLWVkZGQtNDhhNC04ZTAyLTVlNTkzNjkxOGVhZCJ9&pageName=ReportSectionea2d602974fb01cb81f0);
+* Toda a documentação e script do trabalho está aqui.
+* [**Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiN2I4NmE1YTQtOTVkYy00OTk0LTgxNGItYjEzNzBkZTMxNzFhIiwidCI6ImM1ZTg3YmRkLWVkZGQtNDhhNC04ZTAyLTVlNTkzNjkxOGVhZCJ9&pageName=ReportSectionea2d602974fb01cb81f0) desenvolvido no **Microsoft Power BI**;
 * Para auxiliar na análise, foram adicionadas 10 novas colunas (data, dia da semana, mês, estação, hora de inicio, hora de fim, tempo total, tempo total em minutos, hora e quilometros percorridos;
 * Antes da limpeza, todo o dataset possuia <span style="background-color: #f2f2f2">5.667.717</span> linhas.
 * **Processo de limpeza:** No processo foram apagadas:
@@ -52,9 +51,9 @@ A busca pela maximização do número de clientes da categoria membros anuais é
   * Valores de duração de viagem negativos, zerados e abaixo de 1.
 
 
-<blockquote style="color: #808080;">
-    <p style="margin-left: 20px;">Após a limpeza e consolidação dos dados em uma tabela, foram retornadas 4.270.103 linhas para a análise.</p>
-</blockquote>
+
+>Após a limpeza e consolidação dos dados em uma tabela, foram retornadas 4.270.103 linhas para a análise.
+
 
 ## Análise e Visualização
 
@@ -62,7 +61,7 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 
 ### Distribuição percentual do total de passeios
 
-<img src="C:/Users/welin/Desktop/GOOGLE/Estudos de caso/1/distribuicaopercentual.png" alt="" width="50%">
+<img src="https://github.com/welingtonfonsec/Cyclist/blob/main/graficos/distribuicaopercentual.png" alt="" width="50%">
 
 **Percepções**
 
@@ -72,7 +71,7 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 
 ### Distribuição semanal do número de passeios
 
-<img src="C:/Users/welin/Desktop/GOOGLE/Estudos de caso/1/distribuicaosemanal.png" alt="" width="50%">
+<img src="https://github.com/welingtonfonsec/Cyclist/blob/main/graficos/distribuicaosemanal.png" alt="" width="50%">
 
 **Percepções**
 
@@ -83,7 +82,7 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 
 ### Distribuição semanal da duração média dos passeios
 
-<img src="C:/Users/welin/Desktop/GOOGLE/Estudos de caso/1/mediadaduracaodopasseio.png" alt="" width="50%">
+<img src="https://github.com/welingtonfonsec/Cyclist/blob/main/graficos/mediadaduracaodopasseio.png" alt="" width="50%">
 
 **Percepções**
 
@@ -94,13 +93,16 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 
 ### Duração do passeio x Distância do passeio
 
-<div style="float: left; width: 50%;">
-  <img src="C:/Users/welin/Desktop/GOOGLE/Estudos de caso/1/mediatempomin.png" alt="" style="width: 100%;">
-</div>
-<div style="float: left; width: 50%;">
-  <img src="C:/Users/welin/Desktop/GOOGLE/Estudos de caso/1/mediakmpercorrido.png" alt="" style="width: 100%;">
-</div>
-<div style="clear: both;"></div>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="https://github.com/welingtonfonsec/Cyclist/blob/main/graficos/mediatempomin.png"></td>
+            <td><img src="https://github.com/welingtonfonsec/Cyclist/blob/main/graficos/mediakmpercorrido.png"></td>
+        </tr>
+    </table>
+</body>
+</html>
 
 **Percepções**
 
@@ -111,7 +113,7 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 
 ### Distribuição do número de passeios por horário
 
-<img src="C:/Users/welin/Desktop/GOOGLE/Estudos de caso/1/horario.png" alt="" width="75%">
+<img src="https://github.com/welingtonfonsec/Cyclist/blob/main/graficos/horario.png" alt="" width="75%">
 
 **Percepções**
 
@@ -122,13 +124,16 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 
 ### Distribuição mensal do número de passeios
 
-<div style="float: left; width: 50%;">
-  <img src="C:/Users/welin/Desktop/GOOGLE/Estudos de caso/1/mes.png" alt="" style="width: 100%;">
-</div>
-<div style="float: left; width: 50%;">
-  <img src="C:/Users/welin/Desktop/GOOGLE/Estudos de caso/1/estacoesdoano.png" alt="" style="width: 100%;">
-</div>
-<div style="clear: both;"></div>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="https://github.com/welingtonfonsec/Cyclist/blob/main/graficos/mes.png"></td>
+            <td><img src="https://github.com/welingtonfonsec/Cyclist/blob/main/graficos/estacoesdoano.png"></td>
+        </tr>
+    </table>
+</body>
+</html>
 
 **Percepções**
 
@@ -144,4 +149,10 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 * Notificações em redes sociais e mensagens de texto em horários de baixo movimento de ciclistas casuais podem ser usadas para atraí-los.
 * Campanhas nos finais de semana e nas estações outono, primavea e verão, podem ajudar a aumentar os números durante esse periodo. Pois o potencial de crescimento de novos membros é enorme.
 * Promoções aplicadas nos meses de inverno, em dias com temperaturas menos rigorosas, talvez combinada com feriados ou Natal, pode ajudar a aumentar os números nesse periodo.
- 
+
+
+
+
+
+
+

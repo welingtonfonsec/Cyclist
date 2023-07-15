@@ -12,6 +12,8 @@
 
 [6. Conclusão e recomendações](#conclusão-e-recomendações)
 
+[7. Para uma análise um pouco mais aprofundada](#para-uma-análise-um-pouco-mais-aprofundada)
+
 
 ## Introdução
 
@@ -19,11 +21,11 @@ Este estudo de caso foi elaborado pela Google em parceria com a Coursera, como p
 
 A empresa oferta seu serviço de aluguel de bicicletas de duas formas: passes individuais chamados de ciclistas "casuais" e assinaturas anuais chamadas de ciclistas "membros". A empresa conta com cerca de 6.000 bicicletas que circulam por meio de 700 estações nas ciclovias da cidade de Chicago, localizada no estado de Illinois, Estados Unidos.
 
-A busca pela maximização do número de clientes da categoria membros anuais é crucial, pois isso é essencial para impulsionar o crescimento futuro da empresa. A adesão de membros anuais além de contribuir para a fidelização dos clientes, pode significar a garantia de uma base financeira sólida. Os insights obtidos na analise podem desempenhar um papel fundamental no desenvolvimento de estratégias de marketing assertivas, focadas em converter um maior número de usuários casuais em membros anuais.
+A busca pela maximização do número de clientes da categoria membros anuais é crucial, pois isso é essencial para impulsionar o crescimento futuro da empresa. A adesão de membros anuais além de contribuir para a fidelização dos clientes, pode significar a garantia de uma base financeira sólida. Os insights obtidos na análise podem desempenhar um papel fundamental no desenvolvimento de estratégias de marketing assertivas, focadas em converter um maior número de usuários casuais em membros anuais.
 
 ## Tarefa de negócios
 
-* Como os membros anuais e os ciclistas casuais usam as bicicletas ciclísticas de maneira diferente?
+* Como os membros anuais e os ciclistas casuais usam as bicicletas da Cyclist de maneira diferente?
 
 * Por que os usuários casuais iriam querer adquirir planos anuais da Cyclist?
 
@@ -43,10 +45,10 @@ A busca pela maximização do número de clientes da categoria membros anuais é
 * Os dados foram baixados para o HD local para manipulação e análise usando o **RStudio**;
 * Toda a **documentação e script** do trabalho está [aqui.](https://github.com/welingtonfonsec/Cyclist/blob/main/documentacao%20em%20R/documentacao.R)
 * [**Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiN2I4NmE1YTQtOTVkYy00OTk0LTgxNGItYjEzNzBkZTMxNzFhIiwidCI6ImM1ZTg3YmRkLWVkZGQtNDhhNC04ZTAyLTVlNTkzNjkxOGVhZCJ9&pageName=ReportSectionea2d602974fb01cb81f0) desenvolvido no **Microsoft Power BI**;
-* Para auxiliar na análise, foram adicionadas 10 novas colunas (data, dia da semana, mês, estação, hora de inicio, hora de fim, tempo total, tempo total em minutos, hora e quilometros percorridos;
+* Para auxiliar na análise, foram adicionadas 10 novas colunas (data, dia da semana, mês, estação, hora de inicio, hora de fim, tempo total, tempo total em minutos, hora e quilômetros percorridos;
 * Antes da limpeza, todo o dataset possuia <span style="background-color: #f2f2f2">5.667.717</span> linhas.
 * **Processo de limpeza:** No processo foram apagadas:
-  * Linhas com nomes de estação inicial e final ausentes encontrados;
+  * Linhas com nomes de estação inicial e final ausentes encontradas;
   * Outras colunas que não possuiam utilidade para esta análise;
   * Valores de duração de viagem negativos, zerados e abaixo de 1.
 
@@ -57,8 +59,8 @@ A busca pela maximização do número de clientes da categoria membros anuais é
 
 ## Análise e Visualização
 
-Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros de passeio no conjunto de dados final. Para observar tendências diferenciadas entre o uso por usuários casuais e membros anuais, foram desenvolvidas visualizações diretamente no RStudio. Para uma visualização mais dinâmica, feita no **Microsoft Power BI**, clique [aqui.](https://app.powerbi.com/view?r=eyJrIjoiN2I4NmE1YTQtOTVkYy00OTk0LTgxNGItYjEzNzBkZTMxNzFhIiwidCI6ImM1ZTg3YmRkLWVkZGQtNDhhNC04ZTAyLTVlNTkzNjkxOGVhZCJ9&pageName=ReportSectionea2d602974fb01cb81f0)
-
+Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros de passeio no conjunto de dados final. Para observar tendências diferenciadas entre o uso por usuários casuais e membros anuais, foram desenvolvidas visualizações diretamente no RStudio. Estes mesmos gráficos podem ser acessados de uma forma mais interativa nesse [Dashboard](https://app.powerbi.com/view?r=eyJrIjoiN2I4NmE1YTQtOTVkYy00OTk0LTgxNGItYjEzNzBkZTMxNzFhIiwidCI6ImM1ZTg3YmRkLWVkZGQtNDhhNC04ZTAyLTVlNTkzNjkxOGVhZCJ9&pageName=ReportSectionea2d602974fb01cb81f0)
+desenvolvido no **Microsoft Power BI**.
 ### Distribuição percentual do total de passeios
 
 <img src="https://github.com/welingtonfonsec/Cyclist/blob/main/graficos/distribuicaopercentual.png" alt="" width="50%">
@@ -67,7 +69,7 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 
 * 60% do total de passeios foram feitos por ciclistas membros.
 * 40% do total de passeios foram feitos por ciclistas casuais.
-* Apesar da maior parte da demanda seja de ciclistas membros, ainda existe um enorme potencial de crescimento. Esse crescimento deve ser via conversão dos casuais em membros. Esse é o foco do longo prazo.
+* Apesar da maior parte da demanda seja de ciclistas membros, ainda existe um enorme potencial de crescimento. Esse crescimento deve ser via conversão dos casuais em membros. Este é o foco no longo prazo.
 
 ### Distribuição semanal do número de passeios
 
@@ -107,8 +109,8 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 **Percepções**
 
 * Os gráficos destacam claramente a diferença entre a média de tempo total do passeio e a média de distância percorrida para cada tipo de usuário.
-* Embora ambos os tipos de usuários percorram uma distância média semelhante , os ciclistas casuais pedalam quase que o dobro de tempo em comparação com os membros anuais.
-* Mais uma evidencia que os ciclistas casuais, usam os passeios para lazer. Essa discrepancia pode ser que ciclistas casuais, por priorizarem o lazer, não se preocupam com o tempo gasto no passeio. Ao contráro dos ciclista membros, que ao usar para se deslocarem para o trabalho, o fator tempo gasto é uma variável importante.
+* Embora ambos os tipos de usuários percorram uma distância média semelhante, os ciclistas casuais pedalam quase que o dobro de tempo em comparação com os membros anuais.
+* Essa discrepância pode acontecer por conta de que ciclistas casuais, por priorizarem o lazer, não se preocupam com o tempo gasto no passeio. Ao contráro dos ciclistas membros, que pelo motivo de usarem principlalmente para se deslocarem para o trabalho, o fator tempo gasto é uma variável importante.
 
 
 ### Distribuição do número de passeios por horário
@@ -119,7 +121,7 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 
 * A diferença proporcional de ciclistas casuais e membros começa a cair no início da noite, se iguala às 22 horas e segue a madrugada com proporções bem parecidas até às 4 da manhã. Após esse horario os membros superam o ciclistas casuais.
 * Os ciclistas membros fazem a maior parte dos passeios durante os horários de expediente e decrescem com a chegada da noite.
-* Esse dado corrobora com a hipotese de que que os ciclistas casuais usam o aluguel de bicicletas para fins de lazer, enquanto os membros a usam para ir ao trabalho.
+* Esse dado corrobora com a hipótese de que que os ciclistas casuais usam o aluguel de bicicletas para fins de lazer, enquanto os membros a usam para irem ao trabalho.
 
 
 ### Distribuição mensal do número de passeios
@@ -143,12 +145,19 @@ Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros
 
 ### Conclusão e recomendações
 
-* Uma observação comum é que os ciclistas casuais estão usando o aluguel de bicicletas para fins de lazer e turismo , enquanto os associados anuais a utilizam predominantemente para fins de deslocamento .
-* Estratégias de marketing direcionadas para o local devem ser planejadas em locais de lazer como parques, teatros, restaurantes, hoteis e cafés.
-* Com a informação de que os ciclistas casuais usam as bicicletas por periodos de tempo mais longos, seria interessante campanhas focadas em custo/beneficio para essa categoria.
+* Uma observação comum é que os ciclistas casuais estão usando o aluguel de bicicletas para fins de lazer e turismo, enquanto os membros anuais a utilizam predominantemente para fins de deslocamento, como ir ao trabalho ou outras atividades rotineiras.
+* Estratégias de marketing devem ser aplicadas em locais tipicamente utilizados para atividades de lazer: como parques, teatros, restaurantes, hoteis e cafés.
+* Com a informação de que os ciclistas casuais usam as bicicletas por periodos de tempo mais longos, seria interessante campanhas focadas em custo/benefício para essa categoria.
 * Notificações em redes sociais e mensagens de texto em horários de baixo movimento de ciclistas casuais podem ser usadas para atraí-los.
-* Campanhas nos finais de semana e nas estações outono, primavea e verão, podem ajudar a aumentar os números durante esse periodo. Pois o potencial de crescimento de novos membros é enorme.
-* Promoções aplicadas nos meses de inverno, em dias com temperaturas menos rigorosas, talvez combinada com feriados ou Natal, pode ajudar a aumentar os números nesse periodo.
+* Campanhas nos finais de semana e nas estações outono, primavea e verão, podem ajudar a aumentar os números durante esse período. Pois o potencial de crescimento de novos membros é enorme.
+* Promoções aplicadas nos meses de inverno, em dias com temperaturas menos rigorosas, talvez combinada com feriados ou Natal, podem ajudar a aumentar os números nesse periodo.
+
+### Para uma análise um pouco mais aprofundada
+
+Para fins de uma análise mais completa, recomenda-se:
+* A inserção variáveis que indicam o preço pago por cada usuário, informações de clima e tempo diários.
+* A aplicação de formulários para saber informações dos usuários, tais como idade, ocupação e motivação de uso do serviço, por exemplo.
+* Saber a nota dos usuários pelo serviço da Cyclist, nota de segurança e de qualidade das ciclovias e ciclofaixas.   
 
 
 

@@ -44,7 +44,7 @@ A busca pela maximização do número de clientes da categoria membros anuais é
 
 * Os dados foram baixados para o HD local para manipulação e análise usando o **RStudio**;
 * Toda a **documentação e script** do trabalho está [aqui.](https://github.com/welingtonfonsec/Cyclist/blob/main/documentacao%20em%20R/documentacao.R)
-* [**Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiN2I4NmE1YTQtOTVkYy00OTk0LTgxNGItYjEzNzBkZTMxNzFhIiwidCI6ImM1ZTg3YmRkLWVkZGQtNDhhNC04ZTAyLTVlNTkzNjkxOGVhZCJ9&pageName=ReportSectionea2d602974fb01cb81f0) desenvolvido no **Microsoft Power BI**;
+* [**Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiYjVkNzRkMDYtM2QwMi00ZTk5LWIwMTYtODQ4NTNhMDdmZTM0IiwidCI6Ijk5NWRiNjhkLThmNGMtNGM5OS05NDA2LTkzOTVjNGY3ZDA0ZSJ9) desenvolvido no **Microsoft Power BI**;
 * Para auxiliar na análise, foram adicionadas 10 novas colunas (data, dia da semana, mês, estação, hora de inicio, hora de fim, tempo total, tempo total em minutos, hora e quilômetros percorridos;
 * Antes da limpeza, todo o dataset possuia <span style="background-color: #f2f2f2">5.667.717</span> linhas.
 * **Processo de limpeza:** No processo foram apagadas:
@@ -59,7 +59,7 @@ A busca pela maximização do número de clientes da categoria membros anuais é
 
 ## Análise e Visualização
 
-Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros de passeio no conjunto de dados final. Para observar tendências diferenciadas entre o uso por usuários casuais e membros anuais, foram desenvolvidas visualizações diretamente no RStudio. Estes mesmos gráficos podem ser acessados de uma forma mais interativa nesse [Dashboard](https://app.powerbi.com/view?r=eyJrIjoiN2I4NmE1YTQtOTVkYy00OTk0LTgxNGItYjEzNzBkZTMxNzFhIiwidCI6ImM1ZTg3YmRkLWVkZGQtNDhhNC04ZTAyLTVlNTkzNjkxOGVhZCJ9&pageName=ReportSectionea2d602974fb01cb81f0)
+Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros de passeio no conjunto de dados final. Para observar tendências diferenciadas entre o uso por usuários casuais e membros anuais, foram desenvolvidas visualizações diretamente no RStudio. Estes mesmos gráficos podem ser acessados de uma forma mais interativa nesse [Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjVkNzRkMDYtM2QwMi00ZTk5LWIwMTYtODQ4NTNhMDdmZTM0IiwidCI6Ijk5NWRiNjhkLThmNGMtNGM5OS05NDA2LTkzOTVjNGY3ZDA0ZSJ9)
 desenvolvido no **Microsoft Power BI**.
 ### Distribuição percentual do total de passeios
 

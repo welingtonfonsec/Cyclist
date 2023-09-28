@@ -1,3 +1,12 @@
+# ESTUDO DE CASO: 
+## Análise de Dados sobre Comportamento de Usuários Casuais e Membros de Bicicletas da Empresa Cyclist
+
+Autor: Welington Fonseca
+
+Apresentação em forma de [Storytelling no Power BI](https://app.powerbi.com/view?r=eyJrIjoiNDE0NTM2OTQtYWI3My00YmNjLWE5MzItNzhiMzRjMzQ3NGZlIiwidCI6Ijk5NWRiNjhkLThmNGMtNGM5OS05NDA2LTkzOTVjNGY3ZDA0ZSJ9)
+
+[Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjVkNzRkMDYtM2QwMi00ZTk5LWIwMTYtODQ4NTNhMDdmZTM0IiwidCI6Ijk5NWRiNjhkLThmNGMtNGM5OS05NDA2LTkzOTVjNGY3ZDA0ZSJ9) no Power BI
+
 ## Índice
 
 [1. Introdução](#introdução)
